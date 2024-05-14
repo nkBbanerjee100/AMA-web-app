@@ -31,7 +31,7 @@ const Page = () => {
     // const { session } = useSession();
     const { data: session } = useSession();
 
-    console.log("session is", session);
+    // console.log("session is", session);
 
     const form = useForm({
         resolver: zodResolver(acptMsgsSchema)
