@@ -1,0 +1,17 @@
+[
+    {
+        "title": "Message from XYZ",
+        "content": "HEy,wussup dude???",
+        "received": "5 mins ago"
+    },
+    {
+        "title": "Message from ABC",
+        "content": "HEy,Let's go for a dinner???",
+        "received": "10 mins ago"
+    },
+    {
+        "title": "Message from ERT",
+        "content": "HEy,I'm a lil busy today???",
+        "received": "1 hour ago"
+    }
+]

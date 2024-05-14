@@ -10,8 +10,9 @@ import { zodResolver } from '@hookform/resolvers/zod';
 import axios, { AxiosError } from 'axios';
 import { Loader2, RefreshCcw } from 'lucide-react';
 import { User } from 'next-auth';
-import { getSession, useSession } from 'next-auth/react';
-import React, { useCallback, useEffect, useState } from 'react';
+// import { User } from '@/model/Users';
+import { useSession } from 'next-auth/react';
+import { useCallback, useEffect, useState } from 'react';
 import { useForm } from 'react-hook-form';
 import { acptMsgsSchema } from '@/schemas/acptMsgSchema';
 
@@ -29,6 +30,7 @@ const page = () => {
     }
     // const { session } = useSession();
     const { data: session } = useSession();
+
     console.log("session is", session);
 
     const form = useForm({
@@ -114,7 +116,7 @@ const page = () => {
         }
     }
 
-    const { username } = session?.user as User;
+    const username = session?.user as User;
     // find the baseURL
     const baseUrl = `${window.location.protocol}//${window.location.host}`;
     // profile URL
