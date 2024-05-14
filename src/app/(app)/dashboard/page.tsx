@@ -16,7 +16,7 @@ import { useCallback, useEffect, useState } from 'react';
 import { useForm } from 'react-hook-form';
 import { acptMsgsSchema } from '@/schemas/acptMsgSchema';
 
-const page = () => {
+const Page = () => {
     // handling messages 
     const [messages, setMessages] = useState<Message[]>([]);
     const [isLoading, setIsLoading] = useState(false);
@@ -195,4 +195,4 @@ const page = () => {
     )
 }
 
-export default page
+export default Page
